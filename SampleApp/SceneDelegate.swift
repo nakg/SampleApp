@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import ComponentModule
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,8 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		// This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 		guard let _ = (scene as? UIWindowScene) else { return }
 		
+		// Get the managed object context from the shared persistent container.
+		let debitAccountStore = DebitAccountStore()
+		
 		// Create the SwiftUI view
-		let contentView = MainScene()
+		let contentView = MainScene().environmentObject(debitAccountStore)
 		
 		// Use a UIHostingController as window root view controller.
 		if let windowScene = scene as? UIWindowScene {
