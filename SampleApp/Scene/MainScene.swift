@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComponentModule
 
 struct MainScene: View {
     var body: some View {
