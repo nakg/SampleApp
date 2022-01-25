@@ -34,6 +34,20 @@
 			remoteGlobalIDString = B3554E8627A015FE003A1611;
 			remoteInfo = SampleApp;
 		};
+		B3554EE727A018FD003A1611 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3554EE227A018FD003A1611 /* ComponentModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B3554EC727A01737003A1611;
+			remoteInfo = ComponentModule;
+		};
+		B3554EE927A018FD003A1611 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3554EE227A018FD003A1611 /* ComponentModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B3554ED127A01738003A1611;
+			remoteInfo = ComponentModuleTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +65,7 @@
 		B3554EAA27A01603003A1611 /* SampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3554EAE27A01603003A1611 /* SampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppUITests.swift; sourceTree = "<group>"; };
 		B3554EB027A01603003A1611 /* SampleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3554EE227A018FD003A1611 /* ComponentModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ComponentModule.xcodeproj; path = ComponentModule/ComponentModule.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +100,7 @@
 				B3554EA327A01603003A1611 /* SampleAppTests */,
 				B3554EAD27A01603003A1611 /* SampleAppUITests */,
 				B3554E8827A015FF003A1611 /* Products */,
+				B3554EE127A018FC003A1611 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +144,23 @@
 				B3554EB027A01603003A1611 /* SampleAppUITestsLaunchTests.swift */,
 			);
 			path = SampleAppUITests;
+			sourceTree = "<group>";
+		};
+		B3554EE127A018FC003A1611 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3554EE227A018FD003A1611 /* ComponentModule.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3554EE327A018FD003A1611 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3554EE827A018FD003A1611 /* ComponentModule.framework */,
+				B3554EEA27A018FD003A1611 /* ComponentModuleTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +253,12 @@
 			mainGroup = B3554E7E27A015FE003A1611;
 			productRefGroup = B3554E8827A015FF003A1611 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B3554EE327A018FD003A1611 /* Products */;
+					ProjectRef = B3554EE227A018FD003A1611 /* ComponentModule.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B3554E8627A015FE003A1611 /* SampleApp */,
@@ -228,6 +267,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B3554EE827A018FD003A1611 /* ComponentModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ComponentModule.framework;
+			remoteRef = B3554EE727A018FD003A1611 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B3554EEA27A018FD003A1611 /* ComponentModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ComponentModuleTests.xctest;
+			remoteRef = B3554EE927A018FD003A1611 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B3554E8527A015FE003A1611 /* Resources */ = {

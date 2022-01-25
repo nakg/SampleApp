@@ -1,0 +1,3 @@
+[submodule "ComponentModule"]
+	path = ComponentModule
+	url = https://github.com/nakg/ComponentModule.git
