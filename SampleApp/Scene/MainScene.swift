@@ -9,8 +9,13 @@ import SwiftUI
 import ComponentModule
 
 struct MainScene: View {
+	@EnvironmentObject var store: DebitAccountStore
+	
     var body: some View {
+		NavigationView {
         GMDropdown_DebitAccount()
+				.navigationBarTitle("My Debbit Accounts")
+		}
     }
 }
 
