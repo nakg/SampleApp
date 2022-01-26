@@ -10,11 +10,15 @@ import ComponentModule
 
 struct MainScene: View {
 	@EnvironmentObject var store: DebitAccountStore
+	@ObservedObject private var mainSceneViewModel = MainSceneViewModel()
 	
     var body: some View {
 		NavigationView {
         GMDropdown_DebitAccount()
 				.navigationBarTitle("My Debbit Accounts")
+		}
+		.onAppear {
+			self.mainSceneViewModel.getAllAccounts()
 		}
     }
 }
@@ -22,5 +26,6 @@ struct MainScene: View {
 struct MainScene_Previews: PreviewProvider {
     static var previews: some View {
         MainScene()
+			.environmentObject(DebitAccountStore())
     }
 }
